@@ -65,6 +65,11 @@ body {
   color: #c0c0c0;  
   position: relative;
   z-index: -1;
+  background: url(https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/8727c9b1-be21-4932-a221-4257b59a74dd);
+  background-repeat: repeat;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  animation: slidein 180s forwards infinite alternate;
 }
 
 .hero {
@@ -767,3 +772,23 @@ body.light .progress-wrap svg.progress-circle path {
     box-shadow: 0 0 40px #01FFF4;
     box-shadow: 0 0 40px firebrick;
 }
+
+@keyframes moveHeaderUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slidein {
+  0%,
+  100% {
+    background-position: 20% 0%;
+    background-size: 3400px;
+  }
+  50% {
+    background-position: 100% 0%;
+    background-size: 2400px;
+  }
+}
+
