@@ -262,6 +262,8 @@ h1 {
   line-height: 1.125;
 /*   letter-spacing: -0.015em; */
   letter-spacing: 0.015em;
+  transform: translateY(10%);
+  animation: moveHeaderUp 1s linear 0.5s forwards;	
 }
 
 p {
