@@ -189,6 +189,7 @@ section:nth-last-child(-n+1) {
 
 .container {
     padding: 1.5rem;
+    border: 1px solid #c0c0c0;
 }
 
 .full-bleed {
