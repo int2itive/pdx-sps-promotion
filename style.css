@@ -65,7 +65,7 @@ body {
   color: #c0c0c0;  
   position: relative;
   z-index: -1;
-  background: url(https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/8727c9b1-be21-4932-a221-4257b59a74dd);
+  background: url('https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/8727c9b1-be21-4932-a221-4257b59a74dd');
   background-repeat: repeat;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -89,7 +89,6 @@ body {
   overflow: hidden;
 /*   -webkit-mask-image: linear-gradient(to top, transparent 5%, black 85%);
   mask-image: linear-gradient(to top, transparent 5%, black 85%); */
-/*   outline: 1px solid firebrick; */
 }
 
 .image--container img {
