@@ -188,7 +188,7 @@ section:nth-last-child(-n+1) {
 }
 
 .container {
-    padding: 1.5rem;
+    padding: .25rem;
     border: 1px solid #c0c0c0;
 }
 
