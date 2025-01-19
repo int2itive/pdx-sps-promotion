@@ -180,10 +180,11 @@ img {
 
 section {
     height: 100vh;
+    border: 1px solid firebrick;
 }
 
 section:nth-last-child(-n+1) {
-    border: 0;
+/*    border: 0;  */
     height: 40vh;
 }
 
