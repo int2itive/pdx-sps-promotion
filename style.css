@@ -294,7 +294,14 @@ section {
 }
 
 .container {
-    padding: 5rem;
+    padding: 1.5rem;
+}
+
+
+@media (min-width: 361px) {
+    .container {
+        padding: 5rem;
+    }
 }
 
 .sticky_parent {
