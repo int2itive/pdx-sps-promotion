@@ -187,6 +187,15 @@ section:nth-last-child(-n+1) {
     border: 1px solid firebrick;
 }
 
+section.green {
+    background: radial-gradient(
+      ellipse at right top,
+      #107667ed 0%,
+      #151419 47%,
+      #151419 100%
+    );
+}
+
 .container {
     padding: .25rem;
     border: 1px solid #c0c0c0;
