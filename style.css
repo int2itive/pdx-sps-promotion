@@ -23,18 +23,18 @@
 :root {
 /* 	font-size: 20px; */
   --hdr-main-color: hsl(0,0%,92%);
-	--red: #da2c4d;
-	--yellow: #f8ab37;
-	--green: #2ecc71;
-	--white: #ffffff;
-	--grey-light: #f2f7f9;
-	--grey: #ecedf3;
-	--black: #080808;
-	--black-blue: #1f2029;
-	--black-blue-light: #353746;
-	--black-blue-light-2: #404255;
-	--black-blue-light-3: #4b4d64;
-	--black-light: #424455;
+  --red: #da2c4d;
+  --yellow: #f8ab37;
+  --green: #2ecc71;
+  --white: #ffffff;
+  --grey-light: #f2f7f9;
+  --grey: #ecedf3;
+  --black: #080808;
+  --black-blue: #1f2029;
+  --black-blue-light: #353746;
+  --black-blue-light-2: #404255;
+  --black-blue-light-3: #4b4d64;
+  --black-light: #424455;
   --ff-main-header:  'Gasoek One', sans-serif;
   --space: 1rem;
   --space-md: calc(var(--space) * 2);
@@ -87,8 +87,6 @@ body {
   margin: 0 auto;
   padding: 2.5rem 0;
   overflow: hidden;
-/*   -webkit-mask-image: linear-gradient(to top, transparent 5%, black 85%);
-  mask-image: linear-gradient(to top, transparent 5%, black 85%); */
 }
 
 .image--container img {
@@ -105,7 +103,6 @@ body {
 h1 {
   font-family: 'Jockey One';
   font-family: var(--ff-main-header);
-/*   font-weight: 700; */
   color: #c0c0c0;
   color: #fafafa;
   letter-spacing: 0.040rem;
@@ -158,8 +155,7 @@ h1 {
   font-size: clamp(2rem, 6vw, 3.5rem);
   font-weight: bold;
   line-height: 1.125;
-/*   letter-spacing: -0.015em; */
-  letter-spacing: 0.015em;
+  letter-spacing: 0.015em;	/* formerly letter-spacing: -0.015em; */
   transform: translateY(10%);
   animation: moveHeaderUp 1s linear 0.5s forwards;	
 }
