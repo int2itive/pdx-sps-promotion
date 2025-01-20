@@ -182,14 +182,15 @@ section:nth-last-child(-n+1) {
     border: 1px solid firebrick;
 }
 
-section.green {
+section.green--ltr {
     background: radial-gradient(
-      ellipse at right top,
+      ellipse at left top,
       #107667ed 0%,
-      #151419 47%,
-      #151419 100%
+      #000000 47%,
+      #000000 100%
     );
 }
+
 section.green {
     background: radial-gradient(
       ellipse at right top,
