@@ -238,6 +238,7 @@ section.green {
 .scroll_section img {
     width: 400px;
     height: 80%;
+    height: 70%;
     object-fit: cover;
     object-position: center top;
     animation: animateImage 1.1s ease-in-out 300ms;
