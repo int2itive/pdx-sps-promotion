@@ -193,7 +193,7 @@ section.green--ltr {
 
 section.green {
     background: radial-gradient(
-      ellipse at right top,
+      ellipse at right bottom,
       #107667ed 0%,
       #000000 47%,
       #000000 100%
@@ -225,6 +225,7 @@ section.green {
     position: sticky;
     top: 100px;
     height: 40vh;
+    border: 1px solid transparent;
 }
 
 .scroll_section {
