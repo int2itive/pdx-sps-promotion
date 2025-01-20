@@ -194,7 +194,14 @@ section.green {
       #151419 100%
     );
 }
-
+section.green {
+    background: radial-gradient(
+      ellipse at right top,
+      #107667ed 0%,
+      #000000 47%,
+      #000000 100%
+    );
+}
 .container {
     padding: .25rem 0;
 }
