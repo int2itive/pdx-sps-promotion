@@ -100,9 +100,12 @@ body {
   object-position: 40px -150px;
 }
 
+
+
 h1 {
   font-family: 'Jockey One';
   font-family: var(--ff-main-header);
+/*   font-weight: 700; */
   color: #c0c0c0;
   color: #fafafa;
   letter-spacing: 0.040rem;
@@ -125,6 +128,7 @@ h1 {
   gap: 1rem;
   margin-bottom: 3rem;
   margin-left: 2rem;
+/*   border: 1px solid firebrick; */
 }
 
 @media (min-width: 480px) {
