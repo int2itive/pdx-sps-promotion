@@ -131,6 +131,62 @@ h1 {
   }
 }
 
+.plate {
+  height: 80px;
+  width: 80px;
+}
+ 
+.profile-img--cont {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  top: 140px;
+/*   left: 50%; */
+  right: 2%;
+  width: 240px;
+/*   margin: 0 auto; */
+/*   height: 100%; */
+  z-index: 200;
+/*   visibility: hidden; */
+/*   outline: 2px solid firebrick;   */
+}
+
+@media (min-width: 500px) {
+  .profile-img--cont {
+    top: 100px;
+    justify-content: flex-end;
+  }
+}
+
+.profile-img--cont .image-container {
+  position: relative;
+  width: 100%;
+  width: clamp(100px, 40vw, 350px);  
+/*   height: 350px; */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+/*   border: 1px solid firebrick; */
+}
+
+.profile-img--cont .image-container::after {
+  position: absolute;
+  content: '';
+  inset: 0;
+  height: 100%;
+  padding-bottom: 100%;
+  background: rgba(0 0 0 / .5);
+}
+
+.profile-img--cont .image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+/*   filter: blur(0);
+  scale: 1; */
+}
+
 .article {
   display: grid;
   grid-template-columns:
@@ -792,5 +848,64 @@ body.light .progress-wrap svg.progress-circle path {
     background-position: 100% 0%;
     background-size: 2400px;
   }
+}
+
+
+.plate {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+/*   outline: 1px solid firebrick; */
+}
+
+/***********************/
+/* HAMBURGER MENU ANIMATION */
+/***********************/
+
+.hamburger-menu {
+  position: absolute;
+  top: 2.15rem;
+/*   top: 20px; */
+  right: 1.2rem;
+  z-index: 10;
+  cursor: pointer;
+/*   outline: 1px solid firebrick; */
+}
+
+.menu-bar1,
+.menu-bar2,
+.menu-bar3 {
+  width: 2.5rem;
+  width: 1.75rem;
+  height: 0.125rem;
+  background-color: #fff;
+  margin: 0.6rem 0;
+  transition: 0.4s;
+}
+
+.menu-bar2 {
+  width: 1.5rem;
+  width: 1.25rem;
+  height: 0.125rem;
+  margin-left: auto;
+}
+
+/* ROTATE FIRST BAR */
+.active .menu-bar1 {  
+/*   transform: rotate(-45deg) translate(-0.25rem, 0.4rem); */
+  transform: rotate(-45deg) translate(-0.15rem, 0.75rem);
+/*   transform-origin: top left; */
+}
+
+/* FADE OUT SECOND BAR */
+.active .menu-bar2 {
+  opacity: 0;
+}
+
+/* ROTATE LAST BAR */
+.active .menu-bar3 {
+/*   transform: rotate(45deg) translate(-0.24rem, -0.2rem); */
+    transform: rotate(45deg) translate(-0.15rem, -0.75rem);
+/*   transform-origin: bottom left; */
 }
 
