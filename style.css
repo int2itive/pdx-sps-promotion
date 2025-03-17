@@ -893,6 +893,7 @@ body.light .progress-wrap svg.progress-circle path {
   width: 1.75rem;
   height: 0.125rem;
   background-color: #fff;
+  background-color: currentColor;
   margin: 0.6rem 0;
   transition: 0.4s;
 }
