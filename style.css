@@ -115,6 +115,7 @@ h1 {
   font-family: 'Fjalla One', sans-serif;
   font-family: 'Lexend', sans-serif;
   font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
   line-height: .85;
   position: relative;
   z-index: 2;
