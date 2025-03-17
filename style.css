@@ -545,6 +545,7 @@ section.green {
   flex-flow: row;
   justify-content: flex-start;
   align-items: stretch;
+  align-items: center;
   display: flex;
   position: relative;
 }
