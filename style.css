@@ -396,6 +396,7 @@ section.green {
   display: flex;
   position: relative;
   font-size: 1.1vw;
+  outline: 0;
 }
 
 .overlay {
