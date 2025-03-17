@@ -237,7 +237,7 @@ section {
 
 section:nth-last-child(-n+1) {
     height: 40vh;
-    border: 1px solid firebrick;
+    /* border: 1px solid firebrick; */
 }
 
 section.green--ltr {
