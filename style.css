@@ -928,7 +928,7 @@ body.light .progress-wrap svg.progress-circle path {
 /* ROTATE LAST BAR */
 .active .menu-bar3 {
 /*   transform: rotate(45deg) translate(-0.24rem, -0.2rem); */
-    transform: rotate(45deg) translate(-0.15rem, -0.75rem);
+    transform: rotate(45deg) translate(-0.10rem, -0.75rem);
 /*   transform-origin: bottom left; */
 }
 
