@@ -572,6 +572,9 @@ section.green {
   overflow: hidden;
 }
 
+.slide-inner:nth-last-of-type(-n÷1) {
+  border: 1px solid firebrick;
+}
 
 .cloneable video {
   width: 100%;
