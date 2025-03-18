@@ -212,7 +212,6 @@ h1 {
 
 .headline {
   margin-block-end: var(--space-md);
-  width: 40ch;
   font-family: 'Bebas Neue';
   font-size: clamp(2rem, 6vw, 3.5rem);
   font-weight: bold;
