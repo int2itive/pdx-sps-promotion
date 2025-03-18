@@ -212,6 +212,7 @@ h1 {
 
 .headline {
   margin-block-end: var(--space-md);
+  width: 40ch;
   font-family: 'Bebas Neue';
   font-size: clamp(2rem, 6vw, 3.5rem);
   font-weight: bold;
@@ -917,7 +918,7 @@ body.light .progress-wrap svg.progress-circle path {
 /* ROTATE FIRST BAR */
 .active .menu-bar1 {  
 /*   transform: rotate(-45deg) translate(-0.25rem, 0.4rem); */
-  transform: rotate(-45deg) translate(-0.15rem, 0.95rem);
+  transform: rotate(-45deg) translate(-0.15rem, 0.45rem);
 /*   transform-origin: top left; */
 }
 
