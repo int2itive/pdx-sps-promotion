@@ -272,7 +272,7 @@ section.green {
   object-fit: cover;
 }
 
-@media (min-width: 361px) {
+@media (min-width: 461px) {
     .container {
         padding: 5rem;
     }
