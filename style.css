@@ -917,7 +917,7 @@ body.light .progress-wrap svg.progress-circle path {
 /* ROTATE FIRST BAR */
 .active .menu-bar1 {  
 /*   transform: rotate(-45deg) translate(-0.25rem, 0.4rem); */
-  transform: rotate(-45deg) translate(-0.05rem, 0.95rem);
+  transform: rotate(-45deg) translate(-0.15rem, 0.95rem);
 /*   transform-origin: top left; */
 }
 
