@@ -113,8 +113,7 @@ h1 {
 .hero-title {
   display: grid;
   font-size: clamp(2.5rem, 8vw + 0.5rem, 5.2rem);
-  font-family: 'Fjalla One', sans-serif;
-  font-family: 'Lexend', sans-serif;
+/*   font-family: 'Fjalla One', sans-serif; */
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   line-height: .85;
