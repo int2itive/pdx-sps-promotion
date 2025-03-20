@@ -1,4 +1,5 @@
 const stickySections = [...document.querySelectorAll('.sticky')];
+let menuBtn = document.querySelector('.hamburger-menu');
 
 let images = [ 'https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/pdl-prof-img-005__W45RwHr_qe20pfhxZ.png', 'https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/pdl-prof-img-md2__iYgSM_M6gDha3Da.jpg',   'https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/KP-IMG/pdl-prof-img-119-39M__yVb5suzX_SfaghTBKG.jpg', 'https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/kpa--gal-IMG-070__RfAFDWNkV.png'
 ];
@@ -29,6 +30,16 @@ function transform(section) {
     percentage = percentage < 0 ? 0 : percentage > 400 ? 400 : percentage;
     scrollSection.style.transform = `translate3d(${-(percentage)}vw, 0, 0)`;    
 }
+
+let navigation = new TimelineLite({paused:true, reversed:true});
+navigation.to("#navigation--Wrap", 0.5, {opacity: 1, display: 'block'})
+          .from(".menu", 0.5, {opacity: 0, y: 30})
+          .from(".social", 0.5, {opacity: 0});
+
+menuBtn.addEventListener('click', function() {
+  navigation.reversed() ? navigation.play() : navigation.reverse();
+  document.querySelector('#navigation--Wrap').classList.toggle('showing');
+});
 
 
 /* Progress Indicator - JQuery */
