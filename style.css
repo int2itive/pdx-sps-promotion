@@ -1041,8 +1041,13 @@ body.light .progress-wrap svg.progress-circle path {
      transition:.3s;
      text-decoration: none;
 }
-.social a:hover {
-     color:#F24738;
+.social a svg {
+  fill: white;
+  transition: all .3s ease-in-out;
+}
+.social a:hover svg {
+  color:#F24738;
+  fill: #F24738;
 }
 .fa {
      color: #484848;
