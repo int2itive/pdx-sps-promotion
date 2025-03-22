@@ -619,6 +619,44 @@ section.green {
   margin: 0px;
 }
 
+.footer--classic {
+  background-color: #000;
+  padding-top: 1.6rem;
+}
+
+.ft--container {
+  padding: 0 1.5rem;
+  outline: 1px solid firebrick;
+}
+
+.ft--row {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 24px;
+}
+
+.ft--main-title {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+
+.ft--col .ft--footer-list {
+  list-style: none;
+}
+
+.ft--col .ft--footer-list li a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.copyright {
+  font-size: .85rem;
+  text-align: center;
+/*   padding-block: .85rem; */
+  outline: 1px solid firebrick;
+}
+
 
 @keyframes animateImage {
   0% {
