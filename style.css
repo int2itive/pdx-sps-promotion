@@ -626,7 +626,6 @@ section.green {
 
 .ft--container {
   padding: 0 1.5rem;
-  outline: 1px solid firebrick;
 }
 
 .ft--row {
@@ -654,7 +653,6 @@ section.green {
   font-size: .85rem;
   text-align: center;
 /*   padding-block: .85rem; */
-  outline: 1px solid firebrick;
 }
 
 
@@ -675,7 +673,7 @@ section.green {
 .progress-wrap {
 	position: fixed;
 	right: 15px;
-	bottom: 20px;
+	bottom: 30px;
 	height: 46px;
 	width: 46px;
 	cursor: pointer;
