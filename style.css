@@ -622,6 +622,7 @@ section.green {
 .footer--classic {
   background-color: #000;
   padding-top: 1.6rem;
+  outline: 1px solid firebrick;
 }
 
 .ft--container {
