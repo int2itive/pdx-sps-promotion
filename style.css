@@ -1101,3 +1101,6 @@ body.light .progress-wrap svg.progress-circle path {
   color:#F24738;
 }
 
+html {
+  height: 100%;
+}
