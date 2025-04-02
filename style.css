@@ -648,12 +648,37 @@ section.green {
 .ft--col .ft--footer-list li a {
   text-decoration: none;
   color: currentColor;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+
+.ft--footer-title h3 {
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  margin-bottom: .3rem;
+}
+
+.ft-form-input {
+  height: 38px;
+  width: 240px;
+  outline: 0;
+  border: 0;
+  background-color: #333;
+  color: aliceblue;
+  padding: .5rem;
+  border-radius: 6px;
+}
+
+.ft-form-input:placeholder {
+  color: #c0c0c0;
 }
 
 .copyright {
   font-size: .85rem;
-  text-align: center;
+  /*text-align: center;*/
+  padding-inline-start: .5rem;
 /*   padding-block: .85rem; */
+  /*outline: 1px solid firebrick;*/
 }
 
 
