@@ -634,6 +634,7 @@ section.green {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   gap: 24px;
+  margin-bottom: 2.5rem;
 }
 
 .ft--main-title {
@@ -643,6 +644,7 @@ section.green {
 
 .ft--col .ft--footer-list {
   list-style: none;
+  margin-bottom: 3rem;
 }
 
 .ft--col .ft--footer-list li a {
