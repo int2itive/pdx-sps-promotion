@@ -99,7 +99,7 @@ h1 {
   font-family: var(--ff-main-header);
 /*   font-weight: 700; */
   color: #c0c0c0;
-  color: #fafafa;
+  color: #ffffff;
   letter-spacing: 0.040rem;
   text-shadow: 0 .010em 2px rgba(0, 0, 0, 0.5);
 }
