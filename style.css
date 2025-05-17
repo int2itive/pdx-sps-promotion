@@ -59,7 +59,7 @@ body {
   color: #c0c0c0;  
   position: relative;
   z-index: -1;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/8727c9b1-be21-4932-a221-4257b59a74dd');
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url('https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/8727c9b1-be21-4932-a221-4257b59a74dd');
   background-repeat: repeat;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
