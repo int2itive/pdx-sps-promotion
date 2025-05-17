@@ -352,7 +352,7 @@ section.green {
   scroll-snap-align: center;
   inline-size: 100%;
   max-inline-size: 25rem;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 10;
   font-size: 2rem;
   background: hotpink;
   border-radius: 4px;
