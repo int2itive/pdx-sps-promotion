@@ -43,7 +43,7 @@ menuBtn.addEventListener('click', function() {
   document.querySelector('#navigation--Wrap').classList.toggle('showing');
 });
 
-audioBtn.addEventListener('click', function () {
+audioBtn.addEventListener('click', function() {
     let textScroller = this.querySelector('label-wrapper');
     this.classList.add('is-on');
     let audioOn = true;
