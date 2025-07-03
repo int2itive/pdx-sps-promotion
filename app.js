@@ -1,6 +1,6 @@
 //const stickySections = [...document.querySelectorAll('.sticky')];
 let menuBtn = document.querySelector('.hamburger-menu');
-let audioBtn = document.querySelector('media-audio--container button');
+let audioBtn = document.querySelector('.media-audio--container button');
 
 let images = [ 'https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/pdl-prof-img-005__W45RwHr_qe20pfhxZ.png', 'https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/pdl-prof-img-md2__iYgSM_M6gDha3Da.jpg',   'https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/KP-IMG/pdl-prof-img-119-39M__yVb5suzX_SfaghTBKG.jpg', 'https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/kpa--gal-IMG-070__RfAFDWNkV.png'
 ];
@@ -45,7 +45,7 @@ menuBtn.addEventListener('click', function() {
 
 audioBtn.addEventListener('click', function() {
     let textScroller = this.querySelector('label-wrapper');
-    this.classList.add('is-on');
+    this.classList.toggle('is-on');
     let audioOn = true;
 });
 
