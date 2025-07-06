@@ -1207,7 +1207,7 @@ form div {
 
 .qr--img-wrap {
   grid-column: content;
-  text-align: right;
+  text-align: center;
 }
 
 .qr--img {
