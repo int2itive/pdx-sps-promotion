@@ -597,6 +597,7 @@ h1, p, .site--title {
     text-align: left;
     font-family: var(--ff-main-header);
     font-size: 1.5rem;
+    font-size: clamp(1.4rem, 0.0947rem + 6.5263vw, 4.5rem);
     letter-spacing: 0.075rem;
     margin-block-end: 2.5rem;
 }
