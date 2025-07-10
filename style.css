@@ -642,6 +642,12 @@ main {
   font-weight: bold;
   line-height: 1.125;
   letter-spacing: 0.015em; /* removed minus from value */
+	
+  .showing {
+    transform: translateY(10%);
+    opacity: 0;
+    animation: moveHeaderUp 1s linear 0.5s forwards;
+  }
 }
 
 .dl--section {
@@ -1231,6 +1237,12 @@ form div {
   border-radius: 4px;
 }
 
+@keyframes moveHeaderUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 @keyframes slidein {
   0%,
