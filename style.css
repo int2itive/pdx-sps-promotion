@@ -634,8 +634,9 @@ main {
 }
 
 .headline {
-  margin-block-start: calc(var(--space-md) * 3);
-  margin-block-end: 2rem;
+/*  margin-block-start: calc(var(--space-md) * 3);*/
+  margin-block: calc(var(--space-md) * 3);
+/*  margin-block-end: 2rem;*/
   font-family: "Bebas Neue";
   font-size: clamp(2rem, 6vw, 3.5rem);
   font-weight: bold;
@@ -649,8 +650,23 @@ main {
   background-size: 500%;
   background-position: center -400px;
   backdrop-filter: blur(4px);
-}
 
+  & > * {
+    position: relative;
+    z-index: 100;
+  }
+
+  &::after {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(14px);
+  }
+}
+/* 
 .dl--section > * {
   position: relative;
   z-index: 100;  
@@ -664,7 +680,7 @@ main {
   content: '';
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(14px);
-}
+} */
 
 .dl--single {
   align-self: center;
