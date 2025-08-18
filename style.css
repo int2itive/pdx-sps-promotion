@@ -741,6 +741,11 @@ main {
   );
 }
 
+main.content .gallery:nth-of-type(3) {
+/*  border: 1px solid firebrick;*/
+  margin-block-end: -4rem;
+}
+
 .gallery .item {
   flex-shrink: 0;
   display: flex;
