@@ -442,6 +442,9 @@ h1 {
   font-size: 1rem;
   overflow-wrap: break-word;
 }
+body p:nth-last-of-type(2) {
+    font-size: 1.2rem;
+}
 
 .message--bar {
   grid-column: page;
