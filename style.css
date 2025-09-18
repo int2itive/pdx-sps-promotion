@@ -96,7 +96,7 @@ body {
      opacity: 0;
      position: absolute;
      top: 0;
-     padding: 100px 0;
+     padding: 280px 0;
      overflow: hidden;
 }
 
@@ -131,6 +131,12 @@ body {
      #navigation--Wrap .container {
          width: 80%;
     }
+}
+
+@media (min-width: 768px) {
+  #navigation--Wrap {
+    padding: 100px 0;
+  }
 }
 
 #navigation--Wrap nav {
