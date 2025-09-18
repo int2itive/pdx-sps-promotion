@@ -682,7 +682,7 @@ main {
 
 .headline {
   margin-block-start: var(--space-md);
-  margin-block-start: calc(var(--space-md) * 3);
+/*   margin-block-start: calc(var(--space-md) * 3); */
   /*margin-block: calc(var(--space-md) * 3);*/
   margin-block-end: calc(var(--space-md) * 3);
   font-family: "Bebas Neue";
@@ -700,6 +700,12 @@ main {
     opacity: 0;
 /*    animation: moveHeaderUp 1s linear 0.5s forwards;*/
     animation: moveHeaderUp 1.4s ease-in-out 0.5s forwards;
+  }
+}
+
+@media (min-width: 420px) {
+  .headline {
+    margin-block-start: calc(var(--space-md) * 3);
   }
 }
 
