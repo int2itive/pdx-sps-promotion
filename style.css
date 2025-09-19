@@ -1149,10 +1149,13 @@ main.content .gallery:nth-of-type(3) {
   margin: 0px;
 }
 
-
 .footer--classic {
   background-color: hsl(43.8, 0%, 10%);
   padding-top: 1.6rem;
+  background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/ai-glow_Iw7l7oHWy.webp);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 90% 6px;  
 }
 
 .ft--container {
