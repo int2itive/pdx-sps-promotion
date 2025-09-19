@@ -489,7 +489,7 @@ h1 {
   font-family: "DM Sans", serif, "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif, system-ui;
   /*font-family: 'Titillium Web', sans-serif;*/
   font-weight: 300;
-  font-size: 1.5rem; /* from 1rem */
+  font-size: 1rem; /* from 1rem */
   overflow-wrap: break-word;
 }
 
@@ -610,6 +610,7 @@ h1, .site--title {
 
 p {
   grid-column: page;
+  padding-inline: calc(var(--space-md) / 2);
 }
 
 .site--title {
