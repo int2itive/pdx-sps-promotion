@@ -1151,9 +1151,8 @@ main.content .gallery:nth-of-type(3) {
 
 
 .footer--classic {
-  background-color: #000;
+  background-color: hsl(43.8, 0%, 10%);
   padding-top: 1.6rem;
-  /* outline: 1px solid firebrick; */
 }
 
 .ft--container {
