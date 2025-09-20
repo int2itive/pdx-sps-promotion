@@ -84,7 +84,7 @@ body {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   animation: slidein 180s forwards infinite alternate;
-  overflow-x: hidden;
+/*   overflow-x: hidden; */
   margin: 0;
 }
 
