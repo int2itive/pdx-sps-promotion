@@ -819,13 +819,13 @@ main {
   margin-block-end: 8rem; /* Test Vertical Rhythm Value */ 
 }
 
-.gallery.pre--profile-img {
-  margin-block-end: 1rem;
-}
-
 .gallery::-webkit-scrollbar {
   inline-size: 0 !important;
   display: none;
+}
+
+.gallery.pre--profile-img {
+  margin-block-end: 1rem;
 }
 
 .gallery .wrapper {
@@ -942,7 +942,7 @@ main.content .gallery:nth-of-type(3) {
   background-image: linear-gradient(90deg, var(--color-neutral-900) 85%, #0000);
   justify-content: flex-start;
   align-items: center;
-  width: 37.5em;
+  width: 43.5em;
   height: 100%;
   padding-left: 2em;
   display: flex;
