@@ -757,7 +757,21 @@ main {
   align-items: center;
   gap: .25rem;
   grid-column: full;
-  padding-inline-end: var(--space);
+  padding-block: 6rem;
+  padding-inline: var(--space);
+  outline: 1px solid hsla(43.8, 0%, 75.3%, .2);
+  border-radius: 8px;
+  box-shadow: 0 0.05rem .31rem -0.05rem hsl(0,0%,55.3%);
+}
+
+.dl--section .dl--section_container .dl--single {
+  font-family: 'Raleway';
+  /*font-weight: 300;*/
+  font-weight: 300;
+  font-size: clamp(1.25rem, 0.85rem + 2vw, 2.4rem); 
+  font-size: clamp(1.25rem, 0.989rem + 1.304vw, 2rem);
+  font-size: clamp(1.15rem, 0.854rem + 1.478vw, 2rem);
+  margin-block: 0;
 }
 /*.dl--section > * {
   position: relative;
@@ -775,8 +789,9 @@ main {
 }*/
 
 .dl--single {
-  align-self: center;
-  text-align: center;
+  /*align-self: center;*/
+  /*text-align: center;*/
+  padding-inline-start: var(--space);
 }
 
 .rtl h3 {
@@ -1168,9 +1183,9 @@ main.content .gallery:nth-of-type(3) {
 }
 
 .footer--classic {
-  background-color: hsl(43.8, 0%, 10%);
+  background-color: hsl(43.8, 0%, 8.5%);
   padding-top: 1.6rem;
-  background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/ai-glow_Iw7l7oHWy.webp);
+  background-image: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/ai-glow_Iw7l7oHWy.webp);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 90% 6px;  
@@ -1348,6 +1363,8 @@ form div {
 
 .qr--img {
   border-radius: 4px;
+  width: 120px;
+  height: 120px;
 }
 
 /*
