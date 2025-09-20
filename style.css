@@ -819,6 +819,10 @@ main {
   margin-block-end: 8rem; /* Test Vertical Rhythm Value */ 
 }
 
+.gallery.pre--profile-img {
+  margin-block-end: 1rem;
+}
+
 .gallery::-webkit-scrollbar {
   inline-size: 0 !important;
   display: none;
