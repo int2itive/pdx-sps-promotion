@@ -816,7 +816,7 @@ main {
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
   scrollbar-width: none;
-  margin-block-end: 8rem; /* Test Vertical Rhythm Value */ 
+  margin-block: 8rem; /* Test Vertical Rhythm Value */ 
 }
 
 .gallery::-webkit-scrollbar {
