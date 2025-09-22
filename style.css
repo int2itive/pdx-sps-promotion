@@ -1466,6 +1466,8 @@ form div {
 
 .eDMZAW {
     position: relative;
+    width: 98%;
+    margin: 0 auto;
     grid-column: page;
     background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/ai-glow_Iw7l7oHWy.webp) 0 top / 50% 3px no-repeat,
     linear-gradient(80.9deg, rgba(51, 51, 57, 0.7) -0.58%, rgba(0, 0, 0, 0.3) 6.34%, rgba(0, 0, 0, 0.7) 71.25%), rgb(51, 51, 57);
@@ -1475,6 +1477,18 @@ form div {
 .eDMZAW:nth-last-of-type(-n+1) {
   grid-column: full;
 }
+
+.eDMZAW > * {
+  position: relative;
+  z-index: 1;
+}
+
+.eDMZAW::after {
+  position: absolute:
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  mask-image: linear-gradient(to right, transparent 5%, black 85%);
 
 @media (max-width: 1280px) {
     .eDMZAW {
