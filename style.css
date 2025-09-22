@@ -1488,9 +1488,9 @@ form div {
   inset: 0;
   width: 100%;
   height: 100%;
-  background: #000;
+  background: rgba(0, 0, 0, .2);
   mask-image: linear-gradient(to left, transparent 5%, black 95%);
-  -webkit-mask-image: linear-gradient(to left , transparent 5%, black 95%);
+  -webkit-mask-image: linear-gradient(to left , transparent 84%, black 90%);
 }
 
 @media (max-width: 1280px) {
@@ -1528,6 +1528,7 @@ form div {
     font-size: 3.375rem;
     font-weight: 600;
     text-align: center;
+    margin-block-end: var(--space);
 }
 
 .cjEvTY p {
