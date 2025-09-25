@@ -40,6 +40,7 @@ navigation.to("#navigation--Wrap", 0.5, {opacity: 1, display: 'block'})
 
 menuBtn.addEventListener('click', function() {
   navigation.reversed() ? navigation.play() : navigation.reverse();
+  document.querySelector('.plate').classList.toggle('active');
   document.querySelector('#navigation--Wrap').classList.toggle('showing');
 });
 
