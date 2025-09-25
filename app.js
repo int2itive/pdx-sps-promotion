@@ -1,6 +1,7 @@
 //const stickySections = [...document.querySelectorAll('.sticky')];
 let menuBtn = document.querySelector('.hamburger-menu');
 let audioBtn = document.querySelector('.media-audio--container button');
+let progressPath = document.querySelector('.progress-wrap path');
 
 let images = [ 'https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/pdl-prof-img-005__W45RwHr_qe20pfhxZ.png', 'https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/pdl-prof-img-md2__iYgSM_M6gDha3Da.jpg',   'https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/KP-IMG/pdl-prof-img-119-39M__yVb5suzX_SfaghTBKG.jpg', 'https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/kpa--gal-IMG-070__RfAFDWNkV.png'
 ];
@@ -51,23 +52,46 @@ audioBtn.addEventListener('click', function() {
 });
 
 
-/* Progress Indicator - JQuery */
 
 
-/* Progress Indicator - JQuery */
+let pathLength = progressPath.getTotalLength();
+progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+progressPath.style.strokeDashoffset = pathLength;
+progressPath.getBoundingClientRect();
+progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+const updateProgress = function () {
+    // var scroll = $(window).scrollTop();
+    let scroll = document.documentElement.scrollTop;
+    const wh = Math.max( document.body.scrollHeight, document.body.offsetHeight, 
+                       document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
+    // console.log(wh);
+    const height = wh - document.documentElement.clientHeight; // $(window).height()
+    const progress = pathLength - (scroll * pathLength / height);
+    progressPath.style.strokeDashoffset = progress;
+      
+    if (document.documentElement.scrollTop > offset) {
+      document.querySelector('.progress-wrap').classList.add('active-progress');
+    } else {
+      document.querySelector('.progress-wrap').classList.remove('active-progress');
+    }
+};
 
+window.addEventListener('scroll', updateProgress);                              
+let offset = 150;
+let duration = 550;
+updateProgress();
 
-//(function($) { "use strict";
-
-  //Switch dark/light
-  
-  // $(".switch").on('click', function () {
-  //  if ($("body").hasClass("light")) {
-  //    $("body").removeClass("light");
-  //    $(".switch").removeClass("switched");
-  //  }
-  //  else {
-  //    $("body").addClass("light");
-  //    $(".switch").addClass("switched");
-  //  }
-  // });
+//$(document).ready(function() {
+//    "use strict";
+    
+ jQuery('.progress-wrap').on('click', function(event) {
+     event.preventDefault();
+     jQuery('html, body').animate({scrollTop: 0}, duration);
+ // window.scrollTo({ top: 0, behavior: 'smooth' });
+     return false;
+ });
+    
+//})
+//	
+//})(jQuery);
