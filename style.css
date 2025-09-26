@@ -1468,9 +1468,12 @@ form div {
     position: relative;
     grid-column: page;
     margin-inline; calc(var(--space) / 2);
-    background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/ai-glow_Iw7l7oHWy.webp) 0 top / 50% 3px no-repeat,
+    /* background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/ai-glow_Iw7l7oHWy.webp) 0 top / 50% 3px no-repeat,
     linear-gradient(80.9deg, rgba(51, 51, 57, 0.7) -0.58%, rgba(0, 0, 0, 0.3) 6.34%, rgba(0, 0, 0, 0.7) 71.25%), rgb(51, 51, 57);
-    box-shadow: rgba(0, 0, 0, 0.8) 0 18px 12px, rgba(0, 0, 0, 0.6) 0 9.4784px 5.4192px, rgba(0, 0, 0, 0.2) 0 3.6832px 2.4176px, rgba(255, 255, 255, 0.20) 0.5px 0.5px 0.5px inset, rgba(255, 255, 255, 0.0) 0.5px -0.5px 0.5px inset;
+    box-shadow: rgba(0, 0, 0, 0.8) 0 18px 12px, rgba(0, 0, 0, 0.6) 0 9.4784px 5.4192px, rgba(0, 0, 0, 0.2) 0 3.6832px 2.4176px, rgba(255, 255, 255, 0.20) 0.5px 0.5px 0.5px inset, rgba(255, 255, 255, 0.0) 0.5px -0.5px 0.5px inset; */
+    background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/ai-glow_Iw7l7oHWy.webp) 0 top / 50% 2px no-repeat, linear-gradient(154deg,rgba(51, 51, 57, .4) 0%, rgba(51, 51, 57, .4) 6%, rgba(0, 212, 255, 0.02) 55%);
+    box-shadow: rgba(0, 0, 0, 0.8) 0 18px 12px, rgba(0, 0, 0, 0.6) 0 9.4784px 5.4192px, rgba(0, 0, 0, 0.2) 0 3.6832px 2.4176px, rgba(255, 255, 255, 0.10) 0.5px 0.5px 0.5px inset, rgba(255, 255, 255, 0.0) 0.5px -0.5px 0.5px inset;
+    border-radius: 8px;
 }
 
 .eDMZAW:nth-last-of-type(-n+1) {
