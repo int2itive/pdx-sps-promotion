@@ -329,7 +329,7 @@ button[data-v-6e829ace] {
     /* left: 50%; */
     right: 2%;
     right: 1.5rem;
-    width: 240px;
+    width: 200px;
     /* margin: 0 auto; */
     /* height: 100%; */
     z-index: 5;
@@ -356,6 +356,7 @@ button[data-v-6e829ace] {
   height: 100%;
   padding-bottom: 100%;
   background: rgba(0 0 0 / .1);
+  background: linear-gradient(to top, #000, hsla(240, 86%, 25%, .1) 40%);
 }
 
 .profile-img--cont .image-container img {
