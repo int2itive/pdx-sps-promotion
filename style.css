@@ -1235,6 +1235,9 @@ main.content .gallery:nth-of-type(3) {
   .ft--row:nth-last-of-type(-n+1) .ft--footer-list {
     margin-block-start: 2rem;
   }
+  .ft--row:nth-last-of-type(-n+1) .ft--col:nth-of-type(2) {
+    place-self: end;
+  } 
 }
  
 .ft--col .ft--footer-list li a {
@@ -1349,6 +1352,7 @@ form div {
     font-weight: 600;
     margin-block-start: 2rem;
     margin-block-end: .25rem;
+    padding-inline-start: 0;
 }
 
 .copyright {
