@@ -355,8 +355,11 @@ button[data-v-6e829ace] {
   inset: 0;
   height: 100%;
   padding-bottom: 100%;
-  background: rgba(0 0 0 / .1);
+  background: rgba(0 0 0 / .3);
   background: linear-gradient(to top, #000, hsla(240, 86%, 25%, .1) 40%);
+  mix-blend-mode: multiply;
+  background: hsl(206, 100%, 49%);
+  opacity: 0.15;  
 }
 
 .profile-img--cont .image-container img {
@@ -364,6 +367,8 @@ button[data-v-6e829ace] {
     height: auto;
     display: block;
 /*    mask-image: linear-gradient(to top, transparent 5%, black 95%);*/
+  -webkit-filter:   contrast(128%) grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(120%) sepia(0%);
+          filter:   contrast(128%) grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(120%) sepia(0%);
 }
 /*
 .profile-img--cont {
@@ -398,7 +403,7 @@ button[data-v-6e829ace] {
   margin: 0 auto;
   padding: 2.5rem 0;
   /*overflow: hidden;*/
-  background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/ai-glow_Iw7l7oHWy.webp);
+  /*background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/ai-glow_Iw7l7oHWy.webp);*/
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 90% 2px;
@@ -413,14 +418,16 @@ button[data-v-6e829ace] {
   top: 0;
   width: 100%;
   height: 50vh;  
-  scale: 2.2;
-  filter: blur(12px);
+  /*scale: 2.2;*/
+  scale: 2;
+  filter: blur(8px);
   height: auto;
   aspect-ratio: 16 / 9;
+  opacity: .5;
   object-fit: cover;
 /*  object-position: 40px -150px;*/
   -webkit-mask-image: linear-gradient(to top, transparent 5%, black 85%);
-  mask-image: linear-gradient(to top, transparent 5%, black 85%);  
+  mask-image: linear-gradient(to top, transparent 40%, black 85%);  
 }
 
 h1 {
@@ -429,6 +436,7 @@ h1 {
 /*   font-weight: 700; */
   color: #c0c0c0;
   color: #fafafa;
+  color: hsl(0, 0%, 92%);
   letter-spacing: 0.075rem;
   text-shadow: 0 .010em 2px rgba(0, 0, 0, 0.5);
 }
@@ -664,8 +672,7 @@ p {
     font-family: var(--ff-main-header);
     font-size: clamp(1.5rem, 0.2368rem + 6.3158vw, 4.5rem);
     font-size: clamp(1.4rem, 0.0947rem + 6.5263vw, 4.5rem);
-    letter-spacing: 0.075rem;
-    letter-spacing: 0.095rem;
+    letter-spacing: 0.175rem;
     margin-block-end: 2.5rem;
     margin-block-end: 3.5rem;
 /*    animation: lights 5s 750ms linear infinite;*/
@@ -1363,6 +1370,7 @@ form div {
   background: hsl(279, 92%, 28%);
   background: #081a29;
   background: hsl(208.2, 32.4%, 21.4%);
+  background: hsl(222, 53%, 13%);
     padding-block: 2px; 
   /*outline: 1px solid firebrick;*/
 }
@@ -1474,13 +1482,24 @@ form div {
 .eDMZAW {
     position: relative;
     grid-column: page;
-    margin-inline; calc(var(--space) / 2);
+    /*margin-inline: calc(var(--space) / 2);*/
     /* background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/ai-glow_Iw7l7oHWy.webp) 0 top / 50% 3px no-repeat,
     linear-gradient(80.9deg, rgba(51, 51, 57, 0.7) -0.58%, rgba(0, 0, 0, 0.3) 6.34%, rgba(0, 0, 0, 0.7) 71.25%), rgb(51, 51, 57);
     box-shadow: rgba(0, 0, 0, 0.8) 0 18px 12px, rgba(0, 0, 0, 0.6) 0 9.4784px 5.4192px, rgba(0, 0, 0, 0.2) 0 3.6832px 2.4176px, rgba(255, 255, 255, 0.20) 0.5px 0.5px 0.5px inset, rgba(255, 255, 255, 0.0) 0.5px -0.5px 0.5px inset; */
-    background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/ai-glow_Iw7l7oHWy.webp) 0 top / 50% 2px no-repeat, linear-gradient(154deg,rgba(51, 51, 57, .4) 0%, rgba(51, 51, 57, .4) 6%, rgba(0, 212, 255, 0.02) 55%);
-    box-shadow: rgba(0, 0, 0, 0.8) 0 18px 12px, rgba(0, 0, 0, 0.6) 0 9.4784px 5.4192px, rgba(0, 0, 0, 0.2) 0 3.6832px 2.4176px, rgba(255, 255, 255, 0.10) 0.5px 0.5px 0.5px inset, rgba(255, 255, 255, 0.0) 0.5px -0.5px 0.5px inset;
+    /*background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/ai-glow_Iw7l7oHWy.webp) 0 top / 50% 2px no-repeat, linear-gradient(154deg,rgba(51, 51, 57, .4) 0%, rgba(51, 51, 57, .4) 6%, rgba(0, 212, 255, 0.02) 55%);*/
+    /*box-shadow: rgba(0, 0, 0, 0.8) 0 18px 12px, rgba(0, 0, 0, 0.6) 0 9.4784px 5.4192px, rgba(0, 0, 0, 0.2) 0 3.6832px 2.4176px, rgba(255, 255, 255, 0.10) 0.5px 0.5px 0.5px inset, rgba(255, 255, 255, 0.0) 0.5px -0.5px 0.5px inset;*/
     border-radius: 8px;
+background-color:hsla(0,100%,4%,0);
+background-image:
+radial-gradient(at 98% 62%, hsla(240,6%,21%,1) 0px, transparent 50%),
+radial-gradient(at 63% 63%, hsla(240,6%,21%,1) 0px, transparent 50%),
+radial-gradient(at 27% 63%, hsla(240,6%,21%,1) 0px, transparent 50%),
+radial-gradient(at 1% 63%, hsla(240,6%,21%,1) 0px, transparent 50%),
+radial-gradient(at 98% 35%, hsla(240,6%,21%,1) 0px, transparent 50%),
+radial-gradient(at 27% 43%, hsla(240,6%,21%,1) 0px, transparent 50%),
+radial-gradient(at 0% 34%, hsla(240,6%,21%,1) 0px, transparent 50%),
+radial-gradient(at 63% 45%, hsla(240,100%,4%,1) 0px, transparent 50%);
+background-repeat: repeat;
 }
 
 .eDMZAW:nth-last-of-type(-n+1) {
@@ -1505,10 +1524,10 @@ form div {
 
 @media (max-width: 1280px) {
     .eDMZAW {
-        padding: 120px 0 117px;
+        padding: 220px 0 217px;
     }
     .eDMZAW:nth-last-of-type(-n+1)  {
-        padding: 80px 0 80px;
+        padding: 180px 0 180px;
     }    
 }
 
@@ -1557,6 +1576,7 @@ form div {
         padding: 0 40px;
         max-width: 1130px;
     }
+    z-index: 1;
 }
 
 
@@ -1751,4 +1771,91 @@ body.light .progress-wrap svg.progress-circle path {
         padding: 0 40px;
         max-width: 1130px;
     }
+}
+
+
+
+html {
+    --sc-blue: light-dark(oklch(50% 0.2 220 / 10%), oklch(50% 0.2 220 / 20%));
+    --sc-red: light-dark(oklch(55% 0.13 9 / 10%), oklch(68% 0.13 9 / 20%));
+}
+
+@function --shadow-color(--color, --alpha) {
+    result: oklch(from var(--color) l c h / calc(alpha + var(--alpha)))
+}
+
+@function --shadow(--level, 
+                   --color: light-dark(
+                    oklch(27% 0.00 248 / 1%), /* light mode */
+                    oklch(11% 0.01 267 / 20%) /* dark mode */
+                   )) {
+
+
+    result: if(style(--level: 1): 0 1px 2px -1px --shadow-color(var(--color), 0.09);
+
+            style(--level: 2): 0 3px 5px -2px --shadow-color(var(--color), 0.03),
+            0 7px 14px -5px --shadow-color(var(--color), 0.05);
+
+            style(--level: 3): 0 -1px 3px 0 --shadow-color(var(--color), 0.02),
+            0 1px 2px -5px --shadow-color(var(--color), 0.02),
+            0 2px 5px -5px --shadow-color(var(--color), 0.04),
+            0 4px 12px -5px --shadow-color(var(--color), 0.05),
+            0 12px 15px -5px --shadow-color(var(--color), 0.07);
+
+            style(--level: 4): 0 -2px 5px 0 --shadow-color(var(--color), 0.02),
+            0 1px 1px -2px --shadow-color(var(--color), 0.03),
+            0 2px 2px -2px --shadow-color(var(--color), 0.03),
+            0 5px 5px -2px --shadow-color(var(--color), 0.04),
+            0 9px 9px -2px --shadow-color(var(--color), 0.05),
+            0 16px 16px -2px --shadow-color(var(--color), 0.06);
+
+            style(--level: 5): 0 -1px 2px 0 --shadow-color(var(--color), 0.02),
+            0 2px 1px -2px --shadow-color(var(--color), 0.03),
+            0 5px 5px -2px --shadow-color(var(--color), 0.03),
+            0 10px 10px -2px --shadow-color(var(--color), 0.04),
+            0 20px 20px -2px --shadow-color(var(--color), 0.05),
+            0 40px 40px -2px --shadow-color(var(--color), 0.07);
+
+            style(--level: 6): 0 -1px 2px 0 --shadow-color(var(--color), 0.02),
+            0 3px 2px -2px --shadow-color(var(--color), 0.03),
+            0 7px 5px -2px --shadow-color(var(--color), 0.03),
+            0 12px 10px -2px --shadow-color(var(--color), 0.04),
+            0 22px 18px -2px --shadow-color(var(--color), 0.05),
+            0 41px 33px -2px --shadow-color(var(--color), 0.06),
+            0 100px 80px -2px --shadow-color(var(--color), 0.07);
+            
+            /* Fallback if no level matches */
+            else: none;
+        );
+}
+
+/* Same technique as --shadow(...), but for inner shadows */
+
+@function --inner-shadow(--level, 
+                         --color: light-dark(
+                            oklch(27% 0.00 248 / 1%), 
+                            oklch(11% 0.01 267 / 20%)
+                            )) {
+
+    --inner-shadow-highlight: inset 0 -.5px 0 0 light-dark(oklch(100% 0.00 0), oklch(100% 0.00 0 / 7%)),
+        inset 0 .5px 0 0 light-dark(oklch(0% 0.00 0 / 7%), oklch(0% 0.00 0 / 47%));
+
+    result: if(style(--level: 0): inset 0 0 0 1px --shadow-color(var(--color), 0.09);
+
+            style(--level: 1): inset 0 1px 2px 0 --shadow-color(var(--color), 0.09),
+            var(--inner-shadow-highlight);
+
+            style(--level: 2): inset 0 1px 4px 0 --shadow-color(var(--color), 0.09),
+            var(--inner-shadow-highlight);
+
+            style(--level: 3): inset 0 2px 8px 0 --shadow-color(var(--color), 0.09),
+            var(--inner-shadow-highlight);
+
+            style(--level: 4): inset 0 2px 14px 0 --shadow-color(var(--color), 0.09),
+            var(--inner-shadow-highlight);
+            
+             /* Fallback if no level matches */
+            else: none;
+
+        );
 }
