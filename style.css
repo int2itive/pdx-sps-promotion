@@ -718,8 +718,8 @@ p {
   top: 70%;
   left: 50%;
   transform: translate3d(-50%, 0, 0);
+  color: hsl(43.8 0% 75.3% / .5);
 }
-
 .title-meta__item {
   letter-spacing: 0.075rem;
 }
